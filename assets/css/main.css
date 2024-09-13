@@ -3,6 +3,11 @@
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
+/* Add this to your main.css file */
+p {
+    text-align: justify;
+    margin-bottom: 1em; /* Adjust as needed for spacing between paragraphs */
+}
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
