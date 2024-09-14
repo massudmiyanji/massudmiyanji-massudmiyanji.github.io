@@ -1,5 +1,43 @@
 @import url(fontawesome-all.min.css);
 
+
+
+/* CSS for highlighting images on hover */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+.image-container img {
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.5); /* Red highlight overlay, adjust color if needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+}
+
+
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
